@@ -1,4 +1,4 @@
-FROM          ubuntu:latest
+FROM          ubuntu:16.04
 MAINTAINER    Thiago Zilli Sarmento <thiago.zilli@gmail.com>
 
 # No interactive with frontend
@@ -16,7 +16,7 @@ RUN echo "deb [ arch=amd64,arm64 ] http://repo.mongodb.org/apt/ubuntu xenial/mon
 
 # Install tools
 RUN apt-get update
-RUN apt-get install -y vim git curl wget mongodb-org redis-server inetutils-ping inetutils-traceroute screen
+RUN apt-get install -y vim git curl wget mongodb-org redis-server inetutils-ping inetutils-traceroute screen openssl
 
 # Remove server redis from startup
 #RUN update-rc.d redis-server disable

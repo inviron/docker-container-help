@@ -7,16 +7,16 @@ The docker container is builded with Image base, **ubuntu** latest
 * ***MongoDB Latest***
 * ***Redis Latest***
 * ***Git***
-* ***Tools - (Curl, Vim and Wget)***
+* ***Tools - (Curl, Vim, Wget, OpenSSL)***
 
 #### Create image.
 ```sh
-sudo docker build -t inviron/docker-image-help .
+sudo docker build -t inviron/docker-container-help:latest .
 ```
 
 #### Running up
 ```sh
-sudo docker -d --name=ubuntu-image-help -t inviron/docker-image-help
+sudo docker run -d --name=ubuntu-image-help -t inviron/docker-container-help:latest
 ```
 
 #### Execute shell
