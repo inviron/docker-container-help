@@ -7,7 +7,13 @@ The docker container is builded with Image base, **ubuntu** latest
 * ***MongoDB Latest***
 * ***Redis Latest***
 * ***Git***
-* ***Tools - (Curl, Vim, Wget, OpenSSL)***
+* ***Curl***
+* ***Vim***
+* ***Wget***
+* ***Iodine***
+* ***Screen***
+* ***OpenSSL***
+* ***dnsutils***
 
 #### Create image.
 ```sh

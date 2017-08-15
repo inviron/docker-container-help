@@ -15,8 +15,9 @@ RUN apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv 0C49F3730359A14
 RUN echo "deb [ arch=amd64,arm64 ] http://repo.mongodb.org/apt/ubuntu xenial/mongodb-org/3.4 multiverse" | tee /etc/apt/sources.list.d/mongodb-org-3.4.list
 
 # Install tools
-RUN apt-get update
-RUN apt-get install -y vim git curl wget mongodb-org redis-server inetutils-ping inetutils-traceroute screen openssl
+RUN apt-get update && apt-get install -y --no-install-recommends apt-utils
+RUN apt-get install -y vim git curl wget mongodb-org redis-server inetutils-ping inetutils-traceroute screen openssl net-tools
+RUN apt-get install -y iodine dnsutils
 
 # Remove server redis from startup
 #RUN update-rc.d redis-server disable
