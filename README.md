@@ -3,7 +3,7 @@
 This image is for help a used cluster by rancher or other orchestral tools.
 The docker container is builded with Image base, **ubuntu** latest
 
-#### Instaled Tools
+#### Installed Tools
 * ***MongoDB Latest***
 * ***Redis Latest***
 * ***Git***
